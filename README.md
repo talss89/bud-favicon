@@ -16,14 +16,14 @@ Leverage favicons-webpack-plugin to generate favicons via Bud.js
 
 ## Configuration
 
-You can pass any configuration parameter that `favicons-webpack-plugin` expects via `bud.favicon.setup()`:
+You can pass any [configuration parameter that `favicons-webpack-plugin` expects](https://github.com/jantimon/favicons-webpack-plugin/tree/main) via `bud.favicon.setup()`:
 
 ```js
-    bud.favicon.setup(`logo.svg`);
+bud.favicon.setup(`logo.svg`);
 ```
 
 ```js
-    bud.favicon.setup({
+bud.favicon.setup({
     logo: 'logo.svg', // svg works too!
     mode: 'webapp', // optional can be 'webapp', 'light' or 'auto' - 'auto' by default
     devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
@@ -39,7 +39,7 @@ You can pass any configuration parameter that `favicons-webpack-plugin` expects 
         yandex: false
       }
     }
-  });
+});
 ```
 
-Thank you to @strarsis for suggesting wrapping `favicons-webpack-plugin` into a Bud.js extension.
+Thank you to [@strarsis](https://github.com/strarsis) for suggesting wrapping `favicons-webpack-plugin` into a Bud.js extension.
