@@ -1,0 +1,49 @@
+{
+  "name": "bud-favicon",
+  "version": "0.0.1",
+  "description": "Leverage favicons-webpack-plugin to generate favicons via Bud.js",
+  "main": "index.js",
+  "repository": "https://github.com/talss89/bud-favicon",
+  "contributors": [
+    {
+      "email": "tom.lawton@cndu.it",
+      "name": "Tom Lawton",
+      "url": "https://github.com/talss89"
+    }
+  ],
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./types": "./lib/types.js"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./lib/index.js"
+      ],
+      "types": [
+        "./lib/types.js"
+      ]
+    }
+  },
+  "types": "./lib/index.d.ts",
+  "module": "./lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "devDependencies": {
+    "@roots/bud": "^6.17.0",
+    "@roots/bud-framework": "^6.17.0",
+    "@types/node": "18.17.9",
+    "tslib": "2.6.2"
+  },
+  "dependencies": {
+    "favicons": "^7.1.4",
+    "favicons-webpack-plugin": "^6.0.1"
+  },
+  "bud": {
+    "version": ">=6.16.0"
+  }
+}
